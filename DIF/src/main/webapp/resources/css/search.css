@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.searchForm{border-bottom: 2px solid #26A69A;margin: 10px;padding: 10px 10px;width: 200px;}
+.search {width: 100%;border:none;outline:none;color: #636e72;font-size:16px;height:25px;background: none;}
+.bt{line-height: 41px; background: #26A69A; font-family: sans-serif; color: white; font-size: 14pt; border: none; vertical-align: middle;}
+#sc{width: 1em;margin: auto;}
+#scbtn{box-shadow: 0px 6px 0px #1c7a72}
