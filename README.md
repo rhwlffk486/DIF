@@ -59,8 +59,8 @@ span.buttonText {
 widthとheightを使用するため、displayをinline-blockに指定しました。
 そしてborder-radiusを利用して角を丸い角に作りました。
 ### Google
-ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
-#### <head부분>
+---------------------------------------------------------------------------
+#### <head部分>
 ```java
 <meta name="google-signin-scope" content="profile email">
 <meta name="google-signin-client_id"
