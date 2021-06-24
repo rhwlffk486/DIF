@@ -10,7 +10,7 @@
 ### Naver(Kakao, Facebook랑 방식이 같기때문에 대표적으로 Naver로 작성하였습니다.)
 ------------------------------------------------------------------
 
-#### <body>
+#### <jsp부분>
 
 ```java
 <a href="${n_url }">
@@ -56,7 +56,7 @@ span.buttonText {
     }
 ```
 ### Google
-#### <head>
+#### <head부분>
 ```java
 <meta name="google-signin-scope" content="profile email">
 <meta name="google-signin-client_id"
@@ -70,7 +70,7 @@ span.buttonText {
 <link rel="stylesheet" href="/resources/css/logIn.css">
 ```
 
-#### <script>
+#### <script부분>
 ```java
 var googleUser = {};
 	var startApp = function() {
@@ -107,7 +107,7 @@ var googleUser = {};
 	  }
  ```
  
- #### <body>
+ #### <jsp부분>
  ```java
  <div id="gSignInWrapper">
 	  <div id="customBtn" class="customgPlusSignIn">
