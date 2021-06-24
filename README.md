@@ -1,6 +1,6 @@
-## 담당역활: Login API
+## 担当役割: Login API
 <details open="open">
-  <summary>개요</summary>
+  <summary>概要</summary>
   <ol>
     <li><a href="#Naver">Naver</a></li>
     <li><a href="#Google">Google</a></li>
@@ -8,10 +8,10 @@
 </details>
 
 ### Naver
-##### (Kakao, Facebook랑 방식이 같기때문에 대표적으로 Naver로 작성하였습니다.)
+##### (Kakao, Facebookと方式が大体同じなので代表的にNaverで作成しました。)
 ------------------------------------------------------------------
 
-#### <jsp부분>
+#### <jsp部分>
 
 ```java
 <a href="${n_url }">
@@ -23,7 +23,7 @@
 	</div>
 </a>
 ```
-inline 요소인 span태그를 이용해서 이미지안에 글자를 표시하게 만드는 코드 입니다.
+inlineの要素であるspanタグを利用してイメージの中に文字を表示させるコードです。
 #### CSS
 ```java
 #customBtn2 {
@@ -56,8 +56,8 @@ span.buttonText {
       font-family: 'Roboto', sans-serif;
     }
 ```
-width와 height를 사용하기 위해 display를 inline-block으로 지정하였습니다.
-그리고 border-radius를 이용해서 모서리를 둥근모야으로 만들었습니다.
+widthとheightを使用するため、displayをinline-blockに指定しました。
+そしてborder-radiusを利用して角を丸い角に作りました。
 ### Google
 ##### Google은 
 #### <head부분>
@@ -73,8 +73,8 @@ width와 height를 사용하기 위해 display를 inline-block으로 지정하�
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <link rel="stylesheet" href="/resources/css/logIn.css">
 ```
-Google에서 제공하는 방식으로 만들었습니다.
-#### <script부분>
+Googleで提供する方法で作りました。
+#### <script部分>
 ```java
 var googleUser = {};
 	var startApp = function() {
@@ -109,9 +109,10 @@ var googleUser = {};
 	        });
 	  }
  ```
- Google로그인 버튼을 누르면 straApp() 이 실행되고 안에 있는 attachSignin(document.getElementById('customBtn'));에 의해서  function attachSignin(element)이 실행됩니다.
- attachSignin에 의해서 토큰을 받고, ajax를 이용해서 Controller에 토큰을 보내줍니다. Controller의 작업이 성공하면 메인화면으로 돌아갑니다. (Controller에서 토큰 유효성 검사를 한후, 정보 요청)
- #### <jsp부분>
+Googleログインボタンを押すとstraApp()が実行され、中にあるattachSignin(document.getElementById(「customBtn」));によってfunctionattachSignin(element)が実行されます。
+attachSigninによってトークンを受け取り、ajaxを利用してControllerにトークンを送ってくれます。 Controllerのジョブが成功すると、メイン画面に戻ります。 
+（Controllerでトークン有効性検査をした後、情報要請）
+ #### <jsp部分>
  ```java
  <div id="gSignInWrapper">
 	  <div id="customBtn" class="customgPlusSignIn">
