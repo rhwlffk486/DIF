@@ -7,19 +7,18 @@
 <meta name="google-signin-client_id"
 	content="53828679659-h0m4th5u7oop341guu0nb7uinkm282t8.apps.googleusercontent.com">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
-<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script src="https://apis.google.com/js/api:client.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
 <link rel="stylesheet" href="/resources/css/btn.css">
-<link rel="icon" type="image/png" sizes="32x32" href="/resources/icons/favicon-32x32.png">
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <link rel="stylesheet" href="/resources/css/logIn.css">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/icons/favicon-32x32.png">
 <script>
 	
 	var googleUser = {};
 	var startApp = function() {
 	    gapi.load('auth2', function(){
-	      // GoogleAuth 라이브러리의 싱글 톤을 검색하고 클라이언트를 설정
 	      auth2 = gapi.auth2.init({
 	        client_id: '53828679659-h0m4th5u7oop341guu0nb7uinkm282t8.apps.googleusercontent.com',
 	        cookiepolicy: 'single_host_origin',
@@ -92,7 +91,7 @@
 				<td>
 					<a href="${n_url }">
 						<div id="nSignInWrapper">
-						    <div id="customBtn2" class="customnPlusSignIn">
+						    <div id="customBtn2">
 						      <span class="icon"><img class="logo1" src="/resources/icons/btnG_아이콘사각.png"></span>
 						      <span class="buttonText">네이버 로그인</span>
 						    </div>
@@ -102,12 +101,12 @@
 			</tr>
 			<tr>
 				<td>
-					<div id="gSignInWrapper">
-						  <div id="customBtn" class="customgPlusSignIn">
-						     <span class="icon"><img class="logo" src="/resources/icons/g-logo.png"> </span>
-						     <span class="buttonText">구글 로그인</span>
-						  </div> 
-					</div>
+						<div id="gSignInWrapper">
+							  <div id="customBtn" class="customgPlusSignIn">
+							     <span class="icon"><img class="logo" src="/resources/icons/g-logo.png"> </span>
+							     <span class="buttonText">구글 로그인</span>
+							  </div> 
+						</div>
  					<script>startApp();</script>
 				</td>
 			</tr>
@@ -122,7 +121,7 @@
 				<td>
 					<a href="${f_url}" >
 						<div id="fSignInWrapper">
-						    <div id="customBtn1" class="customfPlusSignIn">
+						    <div id="customBtn1">
 						      <span class="icon"><img class="logo" src="/resources/icons/f_logo.png"></span>
 						      <span class="buttonText">페이스북 로그인</span>
 						    </div>

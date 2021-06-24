@@ -7,7 +7,6 @@
       height: 43px;
       border-radius: 5px;
       border: thin solid grey;
-      white-space: nowrap;
     }
     #customBtn:hover {
       cursor: pointer;
@@ -48,7 +47,6 @@
       height: 43px;
       border-radius: 5px;
       border: thin solid #1877F2;
-      white-space: nowrap;
     }
     #customBtn2 {
       display: inline-block;
@@ -58,5 +56,4 @@
       height: 43px;
       border-radius: 5px;
       border: thin solid #03C75A;
-      white-space: nowrap;
     }

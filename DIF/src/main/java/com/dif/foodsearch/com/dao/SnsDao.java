@@ -54,7 +54,6 @@ public class SnsDao {
 				result = mapper.socialLogin(re);
 			}
 			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 			

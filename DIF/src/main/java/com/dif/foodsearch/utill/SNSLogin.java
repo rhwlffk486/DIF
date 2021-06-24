@@ -32,8 +32,6 @@ public class SNSLogin {
 	private OAuth20Service oauthService;
 	private String profileUrl;
 	private final static String NSESSION_STATE = "noauth_state";
-	private final static String GSESSION_STATE = "goauth_state";
-	private final static String KSESSION_STATE = "koauth_state";
 	private final static String K_CLIENT_ID = "77a384ce23391d311107bbf45179532f";
 	private final static String K_REDIRECT_URI = "https://tae-hun.xyz/login/kakao/callback";
 	

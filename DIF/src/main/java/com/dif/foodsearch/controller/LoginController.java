@@ -52,14 +52,12 @@ public class LoginController {
 	@Inject
 	private SnsValue nSns;
 
-	@Inject
-	private SnsValue gSns;
-	
 	@Autowired
 	private SnsService service;
 	
 	@Autowired
 	private FacebookConnectionFactory connectionFactory;
+	
 	@Autowired
 	private OAuth2Parameters oAuth2Parameters;
 
@@ -182,10 +180,8 @@ public class LoginController {
 		if (idToken != null) {
 			Payload payload = idToken.getPayload();
 			
-			String userId = payload.getSubject();
 
 			// 이름과 email 정보 얻기
-			boolean emailVerified = Boolean.valueOf(payload.getEmailVerified());
 			String email = payload.getEmail();
 			String name = (String) payload.get("name");
 			
