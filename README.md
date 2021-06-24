@@ -109,9 +109,9 @@ var googleUser = {};
 	        });
 	  }
  ```
-Googleログインボタンを押すとstraApp()が実行され、中にあるattachSignin(document.getElementById(「customBtn」));によってfunctionattachSignin(element)が実行されます。
-attachSigninによってトークンを受け取り、ajaxを利用してControllerにトークンを送ってくれます。 
-Controllerのジョブが成功すると、メイン画面に戻ります。 
+Googleログインボタンを押すとstraApp()が実行され、中にあるattachSignin(document.getElementById(「customBtn」));によってfunctionattachSignin(element)が実行されます。    
+attachSigninによってトークンを受け取り、ajaxを利用してControllerにトークンを送ってくれます。    
+Controllerのジョブが成功すると、メイン画面に戻ります。    
 （Controllerでトークン有効性検査をした後、情報要請）
  #### <jsp部分>
  ```java
