@@ -155,6 +155,6 @@ span.buttonText {
     }
 ```
  
- <div> <a href="https://developers.google.com/identity/sign-in/web/build-button">참고 사이트</a></div>
- <div> <a href="https://cloud.google.com/compute/docs/tutorials/javascript-guide">참고 사이트</a></div>
+<a href="https://developers.google.com/identity/sign-in/web/build-button">참고 사이트</a>
+
 -------------------------------------------------------------
