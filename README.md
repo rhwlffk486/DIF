@@ -23,7 +23,7 @@
 	</div>
 </a>
 ```
-
+inline 요소인 span태그를 이용해서 이미지안에 글자를 표시하게 만드는 코드 입니다.
 #### CSS
 ```java
 #customBtn2 {
@@ -56,7 +56,10 @@ span.buttonText {
       font-family: 'Roboto', sans-serif;
     }
 ```
+width와 height를 사용하기 위해 display를 inline-block으로 지정하였습니다.
+그리고 border-radius를 이용해서 모서리를 둥근모야으로 만들었습니다.
 ### Google
+##### Google은 
 #### <head부분>
 ```java
 <meta name="google-signin-scope" content="profile email">
@@ -70,13 +73,12 @@ span.buttonText {
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <link rel="stylesheet" href="/resources/css/logIn.css">
 ```
-
+Google에서 제공하는 방식으로 만들었습니다.
 #### <script부분>
 ```java
 var googleUser = {};
 	var startApp = function() {
 	    gapi.load('auth2', function(){
-	      // GoogleAuth 라이브러리의 싱글 톤을 검색하고 클라이언트를 설정
 	      auth2 = gapi.auth2.init({
 	        client_id: '53828679659-h0m4th5u7oop341guu0nb7uinkm282t8.apps.googleusercontent.com',
 	        cookiepolicy: 'single_host_origin',
@@ -107,7 +109,8 @@ var googleUser = {};
 	        });
 	  }
  ```
- 
+ Google로그인 버튼을 누르면 straApp() 이 실행되고 안에 있는 attachSignin(document.getElementById('customBtn'));에 의해서  function attachSignin(element)이 실행됩니다.
+ attachSignin에 의해서 토큰을 받고, ajax를 이용해서 Controller에 토큰을 보내줍니다. Controller의 작업이 성공하면 메인화면으로 돌아갑니다. (Controller에서 토큰 유효성 검사를 한후, 정보 요청)
  #### <jsp부분>
  ```java
  <div id="gSignInWrapper">
@@ -151,9 +154,7 @@ span.buttonText {
       font-family: 'Roboto', sans-serif;
     }
 ```
-
-https://developers.google.com/identity/sign-in/web/build-button
-https://cloud.google.com/compute/docs/tutorials/javascript-guide
-
+  <a href="https://developers.google.com/identity/sign-in/web/build-button">참고 사이트</a>
+  <a href="https://cloud.google.com/compute/docs/tutorials/javascript-guide">참고 사이트</a>
 
 -------------------------------------------------------------
