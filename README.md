@@ -11,7 +11,7 @@
 ##### (Kakao, Facebookと方式が大体同じなので代表的にNaverで作成しました。)
 ------------------------------------------------------------------
 #### <jsp部分>
-<p style="color:red">HI</p>
+
 ```java
 <a href="${n_url }">
 	<div id="nSignInWrapper">
