@@ -73,7 +73,10 @@ widthとheightを使用するため、displayをinline-blockに指定しまし�
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <link rel="stylesheet" href="/resources/css/logIn.css">
 ```
-Googleで提供する方法で作りました。
+<style>   
+.font { font: 15px arial, sans-serif; }   
+</style>   
+<p class = font>Googleで提供する方法で作りました。</class>
 #### <script部分>
 ```java
 var googleUser = {};
@@ -110,7 +113,7 @@ var googleUser = {};
 	  }
  ```
 Googleログインボタンを押すとstraApp()が実行され、中にあるattachSignin(document.getElementById(「customBtn」));によってfunctionattachSignin(element)が実行されます。    
-attachSigninによってトークンを受け取り、ajaxを利用してControllerにトークンを送ってくれます。    
+attachSigninによってトークンを受け取り、ajaxを利用してControllerにトークンを送ってくれます。
 Controllerのジョブが成功すると、メイン画面に戻ります。    
 （Controllerでトークン有効性検査をした後、情報要請）
  #### <jsp部分>
