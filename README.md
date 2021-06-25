@@ -6,11 +6,12 @@
     <li><a href="#Google">Google</a></li>
   </ol>
 </details>
-<span style="color:yellow">노란 글씨입니다.</span><br>
+
 ### Naver
 ##### (Kakao, Facebookと方式が大体同じなので代表的にNaverで作成しました。)
 ------------------------------------------------------------------
-
+<span style="color:yellow">노란 글씨입니다.</span>
+<span style="color:red">red</span>
 #### <jsp部分>
 
 ```java
