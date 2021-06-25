@@ -6,7 +6,7 @@
     <li><a href="#Google">Google</a></li>
   </ol>
 </details>
-
+<span style="color:yellow">노란 글씨입니다.</span>  
 ### Naver
 ##### (Kakao, Facebookと方式が大体同じなので代表的にNaverで作成しました。)
 ------------------------------------------------------------------
@@ -72,11 +72,8 @@ widthとheightを使用するため、displayをinline-blockに指定しまし�
 <link rel="stylesheet" href="/resources/css/btn.css">
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <link rel="stylesheet" href="/resources/css/logIn.css">
-```
-<style>   
-.font { font: 15px arial, sans-serif; }   
-</style>   
-<p class = font>Googleで提供する方法で作りました。</class>
+``` 
+Googleで提供する方法で作りました。
 #### <script部分>
 ```java
 var googleUser = {};
