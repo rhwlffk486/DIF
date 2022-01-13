@@ -1,6 +1,6 @@
-## 担当役割: Login API
+## 담당역활: Login API
 <details open="open">
-  <summary>概要</summary>
+  <summary>개요</summary>
   <ol>
     <li><a href="#Naver">Naver</a></li>
     <li><a href="#Google">Google</a></li>
@@ -8,9 +8,9 @@
 </details>
 
 ### Naver
-##### (Kakao, Facebookと方式が大体同じなので代表的にNaverで作成しました。)
+##### (Kakao, Facebook와 방식이 대체로 같기 때문에 대표적으로 Naver로 작성했습니다.)
 ------------------------------------------------------------------
-#### <jsp部分>
+#### <jsp부분>
 
 ```java
 <a href="${n_url }">
@@ -22,7 +22,7 @@
 	</div>
 </a>
 ```
-inlineの要素であるspanタグを利用してイメージの中に文字を表示させるコードです。
+inlineの요소인 span테그를 이용하고 이미지 안에 문자를 표시 코드 입니다.
 #### CSS
 ```java
 #customBtn2 {
@@ -55,11 +55,11 @@ span.buttonText {
       font-family: 'Roboto', sans-serif;
     }
 ```
-widthとheightを使用するため、displayをinline-blockに指定しました。
-そしてborder-radiusを利用して角を丸い角に作りました。
+width와height를 이용하기 위해, display를inline-block로 지정했습니다.
+그리고border-radius를 이용해서 각을 둥글게 만들었습니다.
 ### Google
 ---------------------------------------------------------------------------
-#### <head部分>
+#### <head부분>
 ```java
 <meta name="google-signin-scope" content="profile email">
 <meta name="google-signin-client_id"
@@ -72,8 +72,8 @@ widthとheightを使用するため、displayをinline-blockに指定しまし�
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <link rel="stylesheet" href="/resources/css/logIn.css">
 ``` 
-Googleで提供する方法で作りました。
-#### <script部分>
+Google로 제공하는 방법으로 만들었습니다.
+#### <script부분>
 ```java
 var googleUser = {};
 	var startApp = function() {
@@ -108,11 +108,11 @@ var googleUser = {};
 	        });
 	  }
  ```
-Googleログインボタンを押すとstraApp()が実行され、中にあるattachSignin(document.getElementById(「customBtn」));によってfunctionattachSignin(element)が実行されます。    
-attachSigninによってトークンを受け取り、ajaxを利用してControllerにトークンを送ってくれます。
-Controllerのジョブが成功すると、メイン画面に戻ります。    
-（Controllerでトークン有効性検査をした後、情報要請）
- #### <jsp部分>
+Google로그인 버튼을 누르면 straApp()이 실행하며, 안에 있는 attachSignin(document.getElementById(「customBtn」));에 의해서 functionattachSignin(element)이 실행됩니다.    
+attachSignin에 의해 토큰을 주고 받고, ajax를 이용해서 Controller에 토큰을 보냅니다.
+Controller의 실행이 성공하면 메인 화면으로 되돌아 갑니다.    
+（Controller로 토큰 유효성 검사를 한 뒤, 정보요청）
+ #### <jsp부분>
  ```java
  <div id="gSignInWrapper">
 	  <div id="customBtn" class="customgPlusSignIn">
@@ -156,6 +156,6 @@ span.buttonText {
     }
 ```
  
-<a href="https://developers.google.com/identity/sign-in/web/build-button">参考サイト</a>
+<a href="https://developers.google.com/identity/sign-in/web/build-button">참고 </a>
 
 -------------------------------------------------------------
